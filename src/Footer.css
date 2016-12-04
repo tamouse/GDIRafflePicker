@@ -1,0 +1,23 @@
+.Footer {
+    background-color: aquamarine;
+    padding: 0.7em 3em;
+}
+
+.Footer:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.Footer__copyright {
+    display: block;
+    float: left;
+    width: 48%;
+}
+
+.Footer__acknowledgements {
+    display: block;
+    float: right;
+    text-align: right;
+    width: 48%;
+}
