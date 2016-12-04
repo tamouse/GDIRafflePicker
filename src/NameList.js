@@ -6,7 +6,7 @@ class NameList extends Component {
     return (
       <div className="NameList">
         <header className="NameList__header">
-          <h1 className="NameList__title">Names</h1>
+          <h2 className="NameList__title">Names</h2>
           <p className="NameList__instructions">
             Enter names one at a time in the input box, pressing Enter after each name.
             <br/>

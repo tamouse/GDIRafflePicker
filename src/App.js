@@ -3,6 +3,7 @@ import './App.css'
 import Header from './Header'
 import Footer from './Footer'
 import NameList from './NameList'
+import WinnerList from './WinnerList'
 
 class App extends Component {
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
               <NameList/>
             </div>
             <div className="App__right-column">
-              <p>right column</p>
+              <WinnerList/>
             </div>
           </div>
         </main>
