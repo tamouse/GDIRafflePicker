@@ -1,0 +1,9 @@
+.Header {
+    text-align: center;
+    padding: 0.7em 3em;
+    background-color: aquamarine;
+}
+
+.Header__title {
+    font-size: 2em;
+}

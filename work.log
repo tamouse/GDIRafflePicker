@@ -1,0 +1,11 @@
+yarn add -D enzyme react-addons-test-utils
+
+------
+
+Had to downgrade `react-script` to 0.7.0 in `package.json` (also rimraffed node_modules and yarn.lock)
+
+  - https://github.com/facebookincubator/create-react-app/issues/1147
+
+
+------
+
