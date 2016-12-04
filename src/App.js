@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import './App.css'
-import Header from './Header'
-import Footer from './Footer'
-import NameList from './NameList'
-import WinnerList from './WinnerList'
+
+import Header from './components/Header'
+import Footer from './components/Footer'
+import NameList from './components/NameList'
+import WinnerList from './components/WinnerList'
 
 class App extends Component {
   render() {
