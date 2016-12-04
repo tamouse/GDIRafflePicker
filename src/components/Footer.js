@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Footer.css'
-import tamouse from './tamouse.json'
+import tamouse from '../assets/tamouse.json'
+import ReactLogo from './ReactLogo'
 
 class Footer extends Component {
   render () {
@@ -8,7 +9,7 @@ class Footer extends Component {
       <footer className="Footer">
         <span className="Footer__copyright">Written with &hearts; by&nbsp;
           <a href="{tamouse.url}">{tamouse.nickName}</a>.</span>
-        <span className="Footer__acknowledgements">&hearts; React.</span>
+        <span className="Footer__acknowledgements">&hearts; React. <ReactLogo/></span>
       </footer>
     )
   }
