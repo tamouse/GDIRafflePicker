@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './NameList.css'
 
 class NameList extends Component {
 

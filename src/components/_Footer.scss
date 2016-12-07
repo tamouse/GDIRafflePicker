@@ -1,12 +1,10 @@
 .Footer {
     background-color: aquamarine;
     padding: 0.7em 3em;
-}
-
-.Footer:after {
-    content: '';
-    display: table;
-    clear: both;
+    position: absolute;
+    bottom: 0;
+    height: $footerHeight;
+    width: 100%;
 }
 
 .Footer__copyright {
@@ -21,3 +19,4 @@
     text-align: right;
     width: 48%;
 }
+

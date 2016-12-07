@@ -1,22 +1,21 @@
 import React, { Component } from 'react'
-import './App.css'
-
 import Header from './components/Header'
 import Footer from './components/Footer'
 import NameList from './components/NameList'
 import WinnerList from './components/WinnerList'
 
-class App extends Component {
+
+export default class App extends Component {
   render() {
     return (
       <div className="App">
         <Header/>
         <main role="main">
-          <div className="App__two-column">
-            <div className="App__left-column">
+          <div className="App__flex-parent">
+            <div className="App__flex-column App--background-1">
               <NameList/>
             </div>
-            <div className="App__right-column">
+            <div className="App__flex-column App--background-2">
               <WinnerList/>
             </div>
           </div>
@@ -26,5 +25,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

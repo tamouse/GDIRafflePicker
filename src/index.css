@@ -1,11 +1,96 @@
+.container {
+  max-width: 960px;
+  width: 80%;
+  margin: 0 auto; }
+
+.clearfix:before, .clearfix:after, .cf:before, .cf:after {
+  display: table;
+  content: ''; }
+
+.clearfix:after, .cf:after {
+  clear: both; }
+
+* {
+  box-sizing: border-box; }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
 
-.container {
-    max-width: 960px;
-    width: 80%;
-    margin: 0 auto;
-}
+.App__flex-parent {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+  top: 100px;
+  bottom: 40px;
+  width: 100%;
+  min-width: 100%; }
+
+.App__flex-column {
+  display: block;
+  flex: 1;
+  overflow: auto; }
+
+.App--background-1 {
+  background-color: azure; }
+
+.App--background-2 {
+  background-color: antiquewhite; }
+
+.Footer {
+  background-color: aquamarine;
+  padding: 0.7em 3em;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%; }
+
+.Footer__copyright {
+  display: block;
+  float: left;
+  width: 48%; }
+
+.Footer__acknowledgements {
+  display: block;
+  float: right;
+  text-align: right;
+  width: 48%; }
+
+.Header {
+  text-align: center;
+  padding: 0.7em 3em;
+  background-color: aquamarine;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  max-height: 100px; }
+
+.Header__title {
+  font-size: 2em; }
+
+.NameList {
+  padding: 2em; }
+
+.WinnerList {
+  padding: 2em; }
+
+.WinnerList__button {
+  background: darkgoldenrod;
+  font-size: 1.1em;
+  color: white;
+  border: none; }
+
+.ReactLogo__logo {
+  height: 15px;
+  width: 15px; }
+
+.ReactLogo--spinning {
+  animation: ReactLogo-spin infinite 20s linear; }
+
+@keyframes ReactLogo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }

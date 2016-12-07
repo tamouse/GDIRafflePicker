@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import './WinnerList.css'
-
 
 
 class WinnerList extends Component {
