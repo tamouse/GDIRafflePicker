@@ -23,5 +23,5 @@ When you have the names entered, click on the `PICK!`
 button the number of times for the number of 
 raffle winners.
 
-![](screenshot.png)
+![](screencapture.gif)
 
