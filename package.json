@@ -2,6 +2,7 @@
   "name": "GDIRafflePicker",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tamouse.github.io/GDIRafflePicker",
   "devDependencies": {
     "concurrently": "^3.1.0",
     "enzyme": "^2.6.0",
