@@ -9,3 +9,11 @@ Had to downgrade `react-script` to 0.7.0 in `package.json` (also rimraffed node_
 
 ------
 
+Following https://github.com/facebookincubator/create-react-app/issues/78#issuecomment-242138321
+as a way to use Sass.
+
+ - add node-sass
+ - add concurrently
+ - modify package.json scripts
+ - import sass/scss files into index.sass
+ - compile to index.css

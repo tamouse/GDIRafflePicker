@@ -1,7 +1,13 @@
+
 .Header {
     text-align: center;
     padding: 0.7em 3em;
     background-color: aquamarine;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: $headerHeight;
+    max-height: $headerHeight;
 }
 
 .Header__title {

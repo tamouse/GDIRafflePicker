@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './Footer.css'
 import tamouse from '../assets/tamouse.json'
 import ReactLogo from './ReactLogo'
 

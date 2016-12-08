@@ -1,21 +1,7 @@
 import React, { Component } from 'react'
-import './WinnerList.css'
 
 
-
-class WinnerList extends Component {
-
-  handlePick (e) {
-    /// placeholder
-    alert('PICKED!')
-
-    /// when the user clicks the PICK button, dispatch an event
-    /// to the entryList to pick a name, which is removed from
-    /// the entryList and dispatched with an action to add the name
-    /// to the winnerList.
-
-  }
-
+export default class WinnerList extends Component {
 
   render () {
     return (
@@ -26,15 +12,13 @@ class WinnerList extends Component {
             Then press the "PICK!" button to select winners.
           </p>
         </heading>
-        <button className="WinnerList__button" onClick={this.handlePick}>PICK!</button>
+        <button className="WinnerList__button" onClick={this.props.pickAWinner}>PICK!</button>
         <ul className="WinnerList__list">
-          <li className="WinnerList__list-item">
-            a winner
-          </li>
+            {this.props.winners.map((winner, index) => {
+              return (<li className="WinnerList__list-item" key={`entrant-${index}`}>{winner}</li>)
+            })}
         </ul>
       </section>
     )
   }
 }
-
-export default WinnerList
