@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 
-class NameList extends Component {
+export default class NameList extends Component {
+
+  constructor(props) {
+    super(props)
+    this.handleKeyDown = this.handleKeyDown.bind(this)
+  }
 
   handleKeyDown (e) {
     if (e.keyCode === 13) { // when the user presses the Enter key in the input box
-
-      alert(e.target.value)
-      /// placeholder for dispatch to add the name to the entryList
-
+      this.props.addEntrant(e.target.value)
       e.target.value = '' // clear the input field for the next entry
     }
   }
@@ -24,11 +26,11 @@ class NameList extends Component {
         </header>
         <input type="text" onKeyDown={this.handleKeyDown}/>
         <ul className="NameList__list">
-          <li>a name</li>
+          {this.props.entrants.map((entrant,index) => {
+            return (<li key={`entrant-${index}`}>{entrant}</li>)
+          })}
         </ul>
       </section>
     )
   }
 }
-
-export default NameList
