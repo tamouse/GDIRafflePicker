@@ -3,13 +3,18 @@
     text-align: center;
     padding: 0.7em 3em;
     background-color: aquamarine;
-    position: absolute;
-    top: 0;
     width: 100%;
-    height: $headerHeight;
-    max-height: $headerHeight;
+
+    @media all and (min-width: $tablet-width) {
+        position: absolute;
+        top: 0;
+        height: $headerHeight;
+        max-height: $headerHeight;
+    }
 }
 
 .Header__title {
-    font-size: 2em;
+    @media all and (min-width: $tablet-width){
+        font-size: 2em;
+    }
 }

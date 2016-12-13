@@ -1,18 +1,23 @@
 .App
 
   &__flex-parent
-    display: flex
-    position: absolute
-    overflow: hidden
-    top: $headerHeight
-    bottom: $footerHeight
     width: 100%
     min-width: 100%
 
+    @media all and (min-width: $tablet-width)
+      display: flex
+      position: absolute
+      overflow: hidden
+      top: $headerHeight
+      bottom: $footerHeight
+
   &__flex-column
     display: block
-    flex: 1
-    overflow: auto
+
+    @media all and (min-width: $tablet-width)
+      flex: 1
+      overflow: auto
+
 
   &--background-1
     background-color: $leftSideBackgroundColor

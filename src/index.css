@@ -19,18 +19,22 @@ body {
   font-family: sans-serif; }
 
 .App__flex-parent {
-  display: flex;
-  position: absolute;
-  overflow: hidden;
-  top: 100px;
-  bottom: 40px;
   width: 100%;
   min-width: 100%; }
+  @media all and (min-width: 776px) {
+    .App__flex-parent {
+      display: flex;
+      position: absolute;
+      overflow: hidden;
+      top: 100px;
+      bottom: 40px; } }
 
 .App__flex-column {
-  display: block;
-  flex: 1;
-  overflow: auto; }
+  display: block; }
+  @media all and (min-width: 776px) {
+    .App__flex-column {
+      flex: 1;
+      overflow: auto; } }
 
 .App--background-1 {
   background-color: azure; }
@@ -41,37 +45,52 @@ body {
 .Footer {
   background-color: aquamarine;
   padding: 0.7em 3em;
-  position: absolute;
-  bottom: 0;
-  height: 40px;
   width: 100%; }
+  @media all and (min-width: 776px) {
+    .Footer {
+      position: absolute;
+      bottom: 0;
+      height: 40px; } }
 
 .Footer__copyright {
-  display: block;
-  float: left;
-  width: 48%; }
+  display: block; }
+  @media all and (min-width: 776px) {
+    .Footer__copyright {
+      float: left;
+      width: 48%; } }
 
 .Footer__acknowledgements {
-  display: block;
-  float: right;
-  text-align: right;
-  width: 48%; }
+  display: block; }
+  @media all and (min-width: 776px) {
+    .Footer__acknowledgements {
+      float: right;
+      text-align: right;
+      width: 48%; } }
 
 .Header {
   text-align: center;
   padding: 0.7em 3em;
   background-color: aquamarine;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100px;
-  max-height: 100px; }
+  width: 100%; }
+  @media all and (min-width: 776px) {
+    .Header {
+      position: absolute;
+      top: 0;
+      height: 100px;
+      max-height: 100px; } }
 
-.Header__title {
-  font-size: 2em; }
+@media all and (min-width: 776px) {
+  .Header__title {
+    font-size: 2em; } }
 
 .NameList {
   padding: 2em; }
+  .NameList__input {
+    width: 100%;
+    border: 2px solid darkblue;
+    height: 3em;
+    padding: 0.5em;
+    font-size: 1.0em; }
 
 .WinnerList {
   padding: 2em; }

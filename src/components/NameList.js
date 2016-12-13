@@ -24,7 +24,7 @@ export default class NameList extends Component {
             Enter names one at a time in the input box.
           </p>
         </header>
-        <input type="text" onKeyDown={this.handleKeyDown}/>
+        <input className="NameList__input" type="text" onKeyDown={this.handleKeyDown}/>
         <ul className="NameList__list">
           {this.props.entrants.map((entrant,index) => {
             return (<li key={`entrant-${index}`}>{entrant}</li>)

@@ -1,22 +1,30 @@
 .Footer {
     background-color: aquamarine;
     padding: 0.7em 3em;
-    position: absolute;
-    bottom: 0;
-    height: $footerHeight;
     width: 100%;
+
+    @media all and (min-width: $tablet-width) {
+        position: absolute;
+        bottom: 0;
+        height: $footerHeight;
+    }
 }
 
 .Footer__copyright {
     display: block;
-    float: left;
-    width: 48%;
+    @media all and (min-width: $tablet-width) {
+        float: left;
+        width: 48%;
+    }
 }
 
 .Footer__acknowledgements {
     display: block;
-    float: right;
-    text-align: right;
-    width: 48%;
+
+    @media all and (min-width: $tablet-width) {
+        float: right;
+        text-align: right;
+        width: 48%;
+    }
 }
 
