@@ -6,6 +6,7 @@
   "devDependencies": {
     "concurrently": "^3.1.0",
     "enzyme": "^2.6.0",
+    "gh-pages": "^1.2.0",
     "node-sass": "^3.13.0",
     "react-addons-test-utils": "^15.4.1",
     "react-scripts": "0.7.0"
@@ -18,8 +19,10 @@
     "start": "concurrently -r \"npm run start:sass\" \"npm run start:react\"",
     "start:react": "react-scripts start",
     "start:sass": "npm run build:sass && npm run watch:sass",
+    "build": "npm run build:sass && npm run build:react",
     "build:react": "react-scripts build",
     "build:sass": "node-sass src/index.sass src/index.css",
+    "deploy": "gh-pages -d build",
     "watch:sass": "npm run build:sass -- --watch",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
